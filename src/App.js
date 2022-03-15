@@ -1,11 +1,16 @@
-import './App.css';
+import React from 'react'
+import { Sidebar } from './components/sidebar';
+import { Header } from './components/Header'
+import { Container } from './components/Container';
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-6xl font-bold underline">
-        Hello world!
-      </h1>
+    <div className="flex">
+      <Sidebar />
+      <div className='w-screen'>
+        <Header />
+        <Container />
+      </div>
     </div>
   );
 }
